@@ -15,7 +15,8 @@
 
 ## To pull the container from the Docker hub
 
-  # $ sudo docker pull Ubuntu: 20.04 $ sudo docker pull <image_name>:<version>
+  # $ sudo docker pull Ubuntu: 20.04 
+  # $ sudo docker pull <image_name>:<version>
 
 ## To run the container in interactive environment
 
