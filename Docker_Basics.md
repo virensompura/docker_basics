@@ -1,91 +1,68 @@
 # docker_basics
+[Commands-For-Docker](#commands-For-Docker)
 
-To install Docker
+## To install Docker
+  
+    $ sudo apt-get install docker.io
 
-\$ sudo apt-get install docker.io
+## To Check the version of the Docker
 
+     $ docker --version $ sudo docker version
 
-To Check the version of the Docker
+## To view all the active/inactive container
 
-\$ docker \--version 
-\$ sudo docker version
+     $ docker ps -a $ docker ps
 
+## To pull the container from the Docker hub
 
-To view all the active/inactive container
+     $ sudo docker pull Ubuntu: 20.04 
+     $ sudo docker pull <image_name>:<version>
 
-\$ docker ps -a 
-\$ docker ps
+## To run the container in interactive environment
 
+     $ sudo docker run -it --name <image_name> /bin/bash 
+     $ docker container exec -it <container_id> bash
 
-To pull the container from the Docker hub
+## To continue working in same container
 
-\$ sudo docker pull Ubuntu: 20.04 
-\$ sudo docker pull \<image_name\>:\<version\>
+     $ sudo docker start -a -i <container_name>
 
+## To list down the containers
 
-To run the container in interactive environment
+     $ docker container ls
 
-\$ sudo docker run -it \--name \<image_name\> /bin/bash 
-\$ docker container exec -it \<container_id\> bash
+## To stop the container
 
+     $ docker stop <container_id>
 
-To continue working in same container
+## To inspect or want the information on the container
 
-\$ sudo docker start -a -i \<container_name\>
+     $ docker inspect <container_id>
 
+## To run the container in the backgroud
 
-To list down the containers
+     $ docker run -d <container_name>
 
-\$ docker container ls
+## To remove the container
 
+     $ docker rm <container_name>
 
-To stop the container
+## To check the log of the container
 
-\$ docker stop \<container_id\>
+     $ docker logs <container_id>
 
+## To check the log of the container for specific time interval
 
-To inspect or want the information on the container
+     $ docker logs --since 5s <container_id>
 
-\$ docker inspect \<container_id\>
+## To commit the changes in the container
 
+      $ docker commit -m "added the changes in xyz.txt" <container_id> <custom_img_name>
 
+## To view the images of Docker
 
-To run the container in the backgroud
+     $ sudo docker images
 
-\$ docker run -d \<container_name\>
+## To remove docker
 
-
-
-To remove the container
-
-\$ docker rm \<container_name\>
-
-
-
-To check the log of the container
-
-\$ docker logs \<container_id\>
-
-
-
-To check the log of the container for specific time interval
-
-\$ docker logs \--since 5s \<container_id\>
-
-
-To commit the changes in the container
-
-\$ docker commit -m \"added the changes in xyz.txt\" \<container_id\>
-\<custom_img_name\>
-
-
-
-To view the images of Docker
-
-\$ sudo docker images
-
-
-
-To remove docker
-
-\$ sudo apt-get remove docker docker-engine docker.io containerd runc
+     $ sudo apt-get remove docker docker-engine docker.io containerd runc
