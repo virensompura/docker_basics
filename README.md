@@ -42,7 +42,7 @@
 
   # $ docker run -d <container_name>
 
-##To remove the container
+## To remove the container
 
   # $ docker rm <container_name>
 
@@ -50,7 +50,7 @@
 
   # $ docker logs <container_id>
 
-##To check the log of the container for specific time interval
+## To check the log of the container for specific time interval
 
   # $ docker logs --since 5s <container_id>
 
