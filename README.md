@@ -7,11 +7,14 @@
 
 ## To Check the version of the Docker
 
-     $ docker --version $ sudo docker version
+     $ docker --version 
+     $ sudo docker version
 
 ## To view all the active/inactive container
 
-     $ docker ps -a $ docker ps
+     $ docker ps -a 
+     $ docker ps
+     $ docker ps -l
 
 ## To pull the container from the Docker hub
 
